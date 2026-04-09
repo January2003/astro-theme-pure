@@ -64,7 +64,7 @@
   "pnpm": {
     "overrides": {
       "astro": "5.17.3",
-      "zod": "3.23.8",
+      "zod": "^4.3.6",
       "zod-to-json-schema": "3.24.1",
       "@astrojs/sitemap": "3.6.1",
       "@unocss/reset": "66.6.8",
