@@ -1,7 +1,6 @@
-// @ts-check
-
 import eslintPluginAstro from 'eslint-plugin-astro'
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   ...eslintPluginAstro.configs.recommended,
   // Ignore files
