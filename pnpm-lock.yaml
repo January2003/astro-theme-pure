@@ -6,7 +6,6 @@ settings:
 
 overrides:
   astro: 5.17.3
-  zod: ^4.3.6
   zod-to-json-schema: 3.24.1
   '@astrojs/sitemap': 3.6.1
   '@unocss/reset': 66.6.8
@@ -65,8 +64,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       zod:
-        specifier: ^4.3.6
-        version: 4.3.6
+        specifier: ^3.24.0
+        version: 3.25.76
     devDependencies:
       '@astrojs/mdx':
         specifier: ^5.0.3
@@ -3680,13 +3679,16 @@ packages:
   zod-to-json-schema@3.24.1:
     resolution: {integrity: sha512-3h08nf3Vw3Wl3PK+q3ow/lIil81IT2Oa7YpQyUUDsEWbXveMesdfK1xBd2RhCkynwZndAxixji/7SYJJowr62w==}
     peerDependencies:
-      zod: ^4.3.6
+      zod: ^3.24.1
 
   zod-to-ts@1.2.0:
     resolution: {integrity: sha512-x30XE43V+InwGpvTySRNz9kB7qFU8DlyEy7BsSTCHPH1R0QasMmHWZDCzYm6bVXtj/9NNJAZF3jW8rzFvH5OFA==}
     peerDependencies:
       typescript: ^4.9.4 || ^5.0.2
-      zod: ^4.3.6
+      zod: ^3
+
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
   zod@4.3.6:
     resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
@@ -3863,7 +3865,7 @@ snapshots:
     dependencies:
       sitemap: 8.0.3
       stream-replace-string: 2.0.0
-      zod: 4.3.6
+      zod: 3.25.76
 
   '@astrojs/telemetry@3.3.0':
     dependencies:
@@ -5311,9 +5313,9 @@ snapshots:
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
-      zod: 4.3.6
-      zod-to-json-schema: 3.24.1(zod@4.3.6)
-      zod-to-ts: 1.2.0(typescript@5.9.3)(zod@4.3.6)
+      zod: 3.25.76
+      zod-to-json-schema: 3.24.1(zod@3.25.76)
+      zod-to-ts: 1.2.0(typescript@5.9.3)(zod@3.25.76)
     optionalDependencies:
       sharp: 0.34.5
     transitivePeerDependencies:
@@ -6702,7 +6704,7 @@ snapshots:
       workerd: 1.20260114.0
       ws: 8.18.0
       youch: 4.1.0-beta.10
-      zod: 4.3.6
+      zod: 3.25.76
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -7761,14 +7763,16 @@ snapshots:
       cookie: 1.1.1
       youch-core: 0.3.3
 
-  zod-to-json-schema@3.24.1(zod@4.3.6):
+  zod-to-json-schema@3.24.1(zod@3.25.76):
     dependencies:
-      zod: 4.3.6
+      zod: 3.25.76
 
-  zod-to-ts@1.2.0(typescript@5.9.3)(zod@4.3.6):
+  zod-to-ts@1.2.0(typescript@5.9.3)(zod@3.25.76):
     dependencies:
       typescript: 5.9.3
-      zod: 4.3.6
+      zod: 3.25.76
+
+  zod@3.25.76: {}
 
   zod@4.3.6: {}
 
